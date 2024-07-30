@@ -50,7 +50,7 @@ export default function Inputfield() {
     }
   };
   let i = 1;
-  // while (i--) fetchCities();
+  while (i--) fetchCities();
 
   const fetchInfo = async () => {
     if (!value) return;
