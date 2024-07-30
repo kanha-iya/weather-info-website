@@ -1,0 +1,11 @@
+.title{
+    width: 286px;
+    text-align: end;
+}
+
+@media screen and (max-width:400px) {
+    .title{
+        width: 286px;
+        text-align: start;
+    }
+}
