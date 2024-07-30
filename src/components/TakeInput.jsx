@@ -22,6 +22,7 @@ export default function Inputfield() {
   const [pressure, setPressure] = useState("");
   const [wind_speed, setWindSpeed] = useState("");
   const [humidity, setHumidity] = useState("");
+  //
 
   // get all cities
   const fetchCities = async () => {
