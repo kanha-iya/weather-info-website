@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from 'react';
 import Select from "react-select";
 import apiKeys from "./ApiKey"; // Ensure this path is correct
 
@@ -37,20 +37,22 @@ export default function Inputfield() {
 
       // Assuming data has a structure where cities are inside a 'cities' key
       // Adjust this according to the actual structure of the API response
-      const cities = data.data.map((city) => ({
-        value: city.city, // or some other identifier
-        label: city.city, // or city.name, based on actual structure
-      }));
-
-      console.log(cities);
+      const cities = data.data.map((city) => {
+        const cityName = city.city.split('(')[0]; // Extract primary city name
+        return {
+          value: cityName,
+          label: cityName,
+        };
+      });
       set_cities(cities);
       // You can now use `cities` as needed in your application
     } catch (error) {
       console.error("Error fetching cities:", error);
     }
   };
-  let i = 1;
-  while (i--) fetchCities();
+  useEffect(() => {
+    fetchCities();
+  }, []); 
 
   const fetchInfo = async () => {
     if (!value) return;
