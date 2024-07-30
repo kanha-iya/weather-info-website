@@ -134,22 +134,22 @@ export default function Inputfield() {
               <p className="m-0 ">{cur_temp}°C</p>
             </div>
           </div>
-          <div className="col-12 col-md-6 item d-flex border p-3 gap-0 gap-md-3 align-items-center">
+          {/* <div className="col-12 col-md-6 item d-flex border p-3 gap-0 gap-md-3 align-items-center">
             <div className="title">
               <h6 className="m-0 ">Max Temperature :</h6>
             </div>
             <div className="title-value">
               <p className="m-0 ">{max_temp}°C</p>
             </div>
-          </div>
-          <div className="col-12 col-md-6 item d-flex border p-3 gap-0 gap-md-3 align-items-center">
+          </div> */}
+          {/* <div className="col-12 col-md-6 item d-flex border p-3 gap-0 gap-md-3 align-items-center">
             <div className="title">
               <h6 className="m-0 ">Min Temperature :</h6>
             </div>
             <div className="title-value">
               <p className="m-0 ">{min_temp}°C</p>
             </div>
-          </div>
+          </div> */}
           <div className="col-12 col-md-6 item d-flex border p-3 gap-0 gap-md-3 align-items-center">
             <div className="title">
               <h6 className="m-0 ">Pressure :</h6>
